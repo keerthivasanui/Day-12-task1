@@ -1,0 +1,99 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.name {
+  font-weight: bold;
+}
+
+.name::after,
+.required::after {
+  content: "*";
+  color: red;
+}
+
+.textbox {
+  height: 35px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 2px;
+}
+.email {
+  width: 435px;
+  height: 35px;
+}
+
+.text {
+  display: inline;
+  margin-left: auto;
+  margin-right: 11rem;
+}
+
+.rate {
+  float: left;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -100px;
+}
+
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 45px;
+}
+
+.rate:not(:checked) > label:before {
+  content: "   ★    ";
+}
+
+.rate > input:checked ~ label {
+  color: rgb(238, 172, 130);
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: rgb(226, 155, 111);
+}
+
+.one {
+  border-collapse: collapse;
+  width: 100%;
+}
+.two {
+  border-collapse: collapse;
+  width: 100%;
+}
+input.form-check {
+  transform: scale(1.5);
+}
+th {
+  text-align: center !important;
+  padding: 6px;
+  font-weight: 500;
+  width: 300px !important;
+}
+td {
+  text-align: start;
+  text-align: center;
+  font-weight: 400;
+}
+
+.t {
+  display: flex;
+  justify-content: flex-start !important;
+}
+tr:nth-child(even) {
+  background-color: rgb(241, 241, 241);
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(225, 225, 225);
+  margin-top: 10px;
+  height: 50px;
+  padding: 10px;
+}
